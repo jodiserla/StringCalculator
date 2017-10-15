@@ -6,7 +6,9 @@ public class Calculator {
         if(text == "") {
             return 0;
         }
-        return 0;
+        else {
+             return 1;
+        }
     }
 }
 
