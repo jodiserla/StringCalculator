@@ -11,7 +11,9 @@ public class Calculator {
                 String numbers[] = text.split("/n|,");
                 int sum = 0;
                 for(String number : numbers) {
-                    sum += toInt(number);
+                    if(toInt(number) < 1001) {
+                        sum += toInt(number);
+                    }
                 }
                 return sum;
             }

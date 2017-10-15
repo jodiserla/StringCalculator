@@ -25,8 +25,13 @@ public class CalculatorTest {
     public void testNewLine() {
         assertEquals(6, Calculator.add("1/n2/n3"));
     }
+    @Test
     public void testNewLineAndComma() {
         assertEquals(6, Calculator.add("1/n2,3"));
+    }
+    @Test
+    public void test1001Numbers() {
+        assertEquals(2, Calculator.add("1001,2"));
     }
 }
 
